@@ -156,11 +156,11 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
   /* ── 컬러 시스템 (변수명 유지) ─────────────────────────────
      10월 4주 히어로 팔레트 — 크림 바탕 + 타이틀 그린 + 단풍 레드
      기준색 : 그린 #22804A (타이틀 2줄) / 레드 #E0362C (타이틀 1줄·단풍) / 크림 #F2F1E1 (히어로 바탕)
-     red    = 일반시민   → 단풍 레드
+     red    = 일반시민   → 단풍 주황
      cyan   = 예술단체·인트로 캡슐·h1 → 타이틀 그린
      blue   = 포커스·링크 hover → 그린
-     pink   = 교육       → 블루 (글자용은 대비 확보한 딥 블루)
-     violet = 공모       → 골드
+     pink   = 공모       → 블루 (글자용은 대비 확보한 딥 블루)
+     violet = 교육       → 골드
      ------------------------------------------------------------- */
   --bnf-ink:#1F2B24;
   --bnf-gray:#5F6B63;
@@ -197,12 +197,12 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
   --bnf-cyan-hover:#FFE08A;
   --bnf-cool-gray:#5F6B63;
 
-  /* 일반시민 카드 포인트 : 히어로 단풍 레드 #E0362C 계열 */
-  --bnf-red:#E0402F;
-  --bnf-red-soft:#FDF1EC;
-  --bnf-red-line:#F8D5CB;
-  --bnf-red-hl:#FAD6CC;
-  --bnf-red-deep:#BF2D20;   /* 글자용 (밝은 바탕 대비 4.5 이상) */
+  /* 일반시민 카드 포인트 : 단풍 주황 #EA5F26 계열 */
+  --bnf-red:#EA5F26;
+  --bnf-red-soft:#FEF2EA;
+  --bnf-red-line:#F9D7C4;
+  --bnf-red-hl:#FBD9C5;
+  --bnf-red-deep:#B5420F;   /* 글자용 (밝은 바탕 대비 4.5 이상) */
 
   --bnf-tag-ink:#66746A;
   --bnf-tag-line:#D9E3D6;
@@ -451,7 +451,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
 .contents_div .bnf-card__meta{display:block;white-space:nowrap;line-height:0;margin-bottom:12px}
 .contents_div .bnf-card__meta > *{display:inline-block;vertical-align:top;line-height:1.62}
 .contents_div .bnf-card__meta > * + *{margin-left:7px}
-.contents_div .bnf-chip{font-size:12px;font-weight:700;padding:5px 10px;border-radius:6px;background:#D3372A;color:#fff}   /* 일반시민 : 단풍 레드 바탕 + 흰 글자 (흰 글자 대비 4.5 확보) */
+.contents_div .bnf-chip{font-size:12px;font-weight:700;padding:5px 10px;border-radius:6px;background:#C24A18;color:#fff}   /* 일반시민 : 단풍 주황 바탕 + 흰 글자 (흰 글자 대비 4.5 확보) */
 .contents_div .bnf-chip.is-youth{background:var(--bnf-pink-soft);color:var(--bnf-pink-deep)}
 .contents_div .bnf-chip.is-biz{background:var(--bnf-cyan-soft);color:var(--bnf-cyan)}
 .contents_div .bnf-chip.is-etc{background:var(--bnf-violet-soft);color:var(--bnf-violet)}
@@ -628,7 +628,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
 .contents_div .bnf-card dd li::before{
   content:"";flex:none;
   width:14px;height:14px;margin-top:.32em;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%23E0402F' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.2 8.6l3.4 3.4L12.8 4.6'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%23EA5F26' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.2 8.6l3.4 3.4L12.8 4.6'/%3E%3C/svg%3E");
   background-size:contain;background-repeat:no-repeat;background-position:center;
 }
 .contents_div .bnf-card.is-youth dd li::before{
@@ -1081,7 +1081,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
     <a class="bnf-btn" href="https://gjlib.jeonnam-gwangju.go.kr/main/clturReq" target="_blank" rel="noopener" aria-label="광주도서관 누리집에서 산수도서관 북콘서트 신청하기">신청하기</a>
   </article>
 
-  <article class="bnf-card is-etc" id="bnf-b2">
+  <article class="bnf-card is-youth" id="bnf-b2">
     <div class="bnf-card__head">
       <figure class="bnf-poster">
         <button type="button" class="bnf-poster__btn" aria-label="2026 전남자치경찰 홍보 콘텐츠 공모전 포스터 크게 보기">
@@ -1091,12 +1091,12 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
         </button>
       </figure>
       <div class="bnf-card__body">
-        <div class="bnf-card__meta"><span class="bnf-chip is-etc">공모</span><span class="bnf-dday" data-end="2026-12-01">12. 1.(화)까지</span></div>
+        <div class="bnf-card__meta"><span class="bnf-chip is-youth">공모</span><span class="bnf-dday" data-end="2026-12-01">12. 1.(화)까지</span></div>
         <h2><span class="bnf-wonly">자치경찰 </span><span class="bnf-nw">홍보를 부탁해!</span><br><strong><span class="bnf-nw">생활 속 자치경찰</span> <span class="bnf-nw">이야기 공모전</span></strong></h2>
         <p class="bnf-lede">시민의 시각에서 자치경찰의 역할과 지역 치안을 알리기 위해 <b class="bnf-hl">&lsquo;2026년 전남자치경찰 홍보 콘텐츠 공모전&rsquo;</b>을 개최합니다. 분야별 우수 작품에는 10만 원부터 80만 원까지 시상금을 드려요. 여러분의 아이디어를 기대합니다!</p>
       </div>
     </div>
-    <div class="bnf-point is-etc"><b>시상금 최대 80만 원</b><span>사진 · 포스터 · 동영상</span></div>
+    <div class="bnf-point is-youth"><b>시상금 최대 80만 원</b><span>사진 · 포스터 · 동영상</span></div>
     <dl>
       <div><dt>공모기간</dt><dd><time datetime="2026-10-21">2026. 10. 21.(수)</time>~<time datetime="2026-12-01">12. 1.(화)</time></dd></div>
       <div><dt>공모분야</dt><dd>사진, 포스터, 동영상</dd></div>
@@ -1133,7 +1133,7 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
     <a class="bnf-btn" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?pageId=jngj24" target="_blank" rel="noopener" aria-label="전문예술법인·단체 지정 공고문 확인하기(공고번호 2026-3074)">공고문 확인하기<span class="bnf-btn__sub">(공고 2026-3074)</span></a>
   </article>
 
-  <article class="bnf-card is-youth" id="bnf-b4">
+  <article class="bnf-card is-etc" id="bnf-b4">
     <div class="bnf-card__head">
       <figure class="bnf-poster">
         <button type="button" class="bnf-poster__btn" aria-label="남도의병역사박물관 2026 박물관 대학 포스터 크게 보기">
@@ -1143,12 +1143,12 @@ if(location.protocol==='file:'||location.hostname.indexOf('github.io')>-1){
         </button>
       </figure>
       <div class="bnf-card__body">
-        <div class="bnf-card__meta"><span class="bnf-chip is-youth">교육</span><span class="bnf-dday" data-start="2026-11-02" data-label="개강">11. 2.(월) 개강</span></div>
+        <div class="bnf-card__meta"><span class="bnf-chip is-etc">교육</span><span class="bnf-dday" data-start="2026-11-02" data-label="개강">11. 2.(월) 개강</span></div>
         <h2>남도의병에 대해<br><strong><span class="bnf-nw">함께 알아볼까요?</span></strong></h2>
         <p class="bnf-lede">남도의병역사박물관에서 나라를 구하기 위해 일어선 전국의 의병 활동을 폭넓게 조명하는 <b class="bnf-hl">&lsquo;2026 박물관 대학&rsquo;</b> 수강생을 모집합니다. 박물관 대학에 신청하고 역사 속 의병의 숭고한 가치를 되새기며 함께 소통해 보세요!</p>
       </div>
     </div>
-    <div class="bnf-point is-youth"><b>수강료 무료</b><span>임진왜란 의병 역사 강좌</span></div>
+    <div class="bnf-point is-etc"><b>수강료 무료</b><span>임진왜란 의병 역사 강좌</span></div>
     <dl>
       <div><dt>과정명</dt><dd>임진왜란 의병의 이해</dd></div>
       <div><dt>교육기간</dt><dd><time datetime="2026-11-02">2026. 11. 2.(월)</time>~<time datetime="2026-12-21">12. 21.(월)</time><span class="bnf-brv420"></span><span class="bnf-nw">매주 월 14~16시</span></dd></div>
